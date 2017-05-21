@@ -1,0 +1,88 @@
+@font-face
+  font-family: kayak
+  src: url('kayak Sans Bold.otf')
+
+
+.main_page_container
+
+  display: flex
+  .main_page_side_bar
+    font-family: "Halant", serif
+    height: 100vh
+    width: 70px
+    .main_page_logo
+      text-align: center
+      margin-top: 30px
+    .main_page_guide
+      margin-top: 350px
+      p
+        letter-spacing: 8
+        transform: rotate(-90deg)
+      hr
+        margin-top: 60px
+        height: 60px
+        width: 0px
+        border-left: 1px solid #0d0c10
+
+  .main_page_intro_container
+
+    display: flex
+    flex-direction: column
+    padding-left: 250px
+    margin-top: 70px
+    font-family: kayak
+    width: 100%
+    p
+      margin-bottom: 0
+      font-size: 160pt
+    p:nth-child(2)
+      margin-top: 0
+      font-size: 72pt
+  .main_page_btns_container
+    margin-top: 50px
+    display: flex
+    font-size: 28pt
+    .main_page_btn
+      -webkit-box-shadow: 7px 7px 17px -2px rgba(0,0,0,0.5)
+      -moz-box-shadow: 7px 7px 17px -2px rgba(0,0,0,0.5)
+      box-shadow: 7px 7px 17px -2px rgba(0,0,0,0.5)
+      width: 280px
+      height: 65px
+      margin-right: 80px
+      text-align: center
+      line-height: 65px
+      color: white
+      background-color: #0d0c10
+
+//on menu click
+.menu
+  font-family: kayak
+  display: flex
+  background-color: #0d0c10
+  position: absolute
+  top: 0
+  height: 100vh
+  width: 80vw
+  .menu_side_bar
+    text-align: center
+    width: 70px
+    .main_page_logo
+      margin-top: 30px
+      margin-bottom: 350px
+    .social_media
+      hr
+        margin-bottom: 10px
+        margin-top: 10px
+        height: 30px
+        width: 0px
+        border-left: 1px solid #0d0c10
+  .menu_items
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    color: white
+    font-size: 60pt
+    text-align: center
+    p
+      margin-bottom: 20px
