@@ -1,0 +1,114 @@
+.blog_container
+  color: #0d0c10
+  height: auto
+  display: flex
+  .blog_side_bar
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100vh
+    width: 70px
+    .menu_icon
+      padding-top: 30px
+      cursor: pointer
+    .side_navigation
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 100%
+      height: 100%
+      p
+        width: 70px
+        height: 21px
+        font-family: 'Halant'
+        font-size: 10pt
+        letter-spacing: 4
+        transform: rotate(-90deg)
+      hr
+        margin-top: 20px
+        height: 60px
+        border-left: 1px solid #0d0c10
+        border-right: none
+
+  .blog_section_container
+    padding-right: 80px
+    padding-left: 80px
+    padding-top: 80px
+    display: flex
+    flex-direction: column
+    width: 100%
+    .blog_section_intro
+      font-family: 'Halant'
+      font-size: 20pt
+      h5
+        font-family: kayak
+        margin-top: 80px
+        font-size: 15pt
+        font-weight: 400
+    .post_container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      width: 100%
+      .post_holder
+        height: 300px
+        width: 300px
+        margin-bottom: 20px
+        background-color: #123
+    .see_more_posts_link
+      display: flex
+      align-self: flex-end
+      margin-top: 50px
+      margin-bottom: 50px
+      hr
+        margin-top: 10px
+        width: 50px
+        height: 1px
+        border-top: 1px solid black
+        border-bottom: none
+        margin-right: 10px
+        border-left: none
+        border-right: none
+      h5
+        cursor: pointer
+        margin: 0
+        font-family: kayak
+        font-size: 15pt
+        font-weight: 400
+
+
+
+
+
+
+
+
+//on menu click
+.menu
+  font-family: kayak
+  display: none
+  background-color: #0d0c10
+  position: absolute
+  top: 0
+  height: 100vh
+  width: 80vw
+  .menu_side_bar
+    text-align: center
+    width: 70px
+    .main_page_logo
+      padding-top: 30px
+      cursor: pointer
+  .menu_items
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    p
+      color: white
+      font-size: 35pt
+      cursor: pointer
+      a
+        text-decoration: none
+        color: white
