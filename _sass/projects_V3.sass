@@ -1,9 +1,5 @@
-@font-face
-  font-family: kayak
-  src: url('kayak Sans Bold.otf')
-
-
-.main_page_container
+.work_container
+  height: auto
   display: flex
   .work_side_bar
     position: fixed
@@ -13,8 +9,8 @@
     height: 100vh
     width: 70px
     .menu_icon
-      cursor: pointer
       padding-top: 30px
+      cursor: pointer
     .side_navigation
       text-align: center
       display: flex
@@ -33,49 +29,44 @@
         border-left: 1px solid #0d0c10
         border-right: none
 
-.main_page_intro_container
-  padding-left: 160px
-  display: flex
-  width: 100%
-  height: 100vh
-  font-family: kayak
-  .intro_text
+  .work_section_container
+    padding-right: 80px
+    padding-left: 120px
+    padding-top: 80px
     display: flex
     flex-direction: column
-    align-self: flex-end
-    padding-bottom: 80px
-    h1
-      font-size: 150pt
-      margin-left: 0
-      margin-bottom: 30px
-    h2
-      font-size: 50pt
-      letter-spacing: 3
-      margin-left: 0
-      margin-top: 0px
-      margin-bottom: 30px
-
-    .main_page_btns_container
-      display: flex
+    width: 100%
+    .work_section_intro
+      font-family: 'Halant'
       font-size: 20pt
-      .main_page_btn
-        color: white
-        margin-right: 60px
-        background-color: #0d0c10
-        h3
-          cursor: pointer
-          margin: 15px 40px 15px 40px
-          a
-            text-decoration: none
-            color: white
+      margin-bottom: 80px
+    .projects_container
+      width: 100%
+      display: flex
+      flex-direction: column
+      .project
+        height: 1000px
+        width: 100%
+        display: flex
+        .col1
+          width: 10%
+        .col2
+          width: 80%
+          background-image: url("img/work1.png")
+          background-position: center
+        .col3
+          width: 10%
+
+
+
 
 
 //on menu click
 .menu
+  position: fixed
   font-family: kayak
   display: none
   background-color: #0d0c10
-  position: fixed
   top: 0
   height: 100vh
   width: 80vw

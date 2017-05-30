@@ -23,4 +23,24 @@ $(document).ready(function(){
       $(".type_of_work", this).hide("fast");
       $(".work_done", this).hide("fast");
     })
+
+    //blog on hover
+
+    $(".post_holder", this).mouseenter(function(){
+
+      //enlarge height of post_info
+      //set post_date $ post_description to display: block
+
+      $(".post_date", this).show("2000");
+      $(".post_description", this).show("2000");
+
+    })
+
+    $(".post_holder", this).mouseleave(function(){
+
+      $(".post_date", this).hide("2000");
+      $(".post_description", this).hide("2000");
+    })
+
+
 });
