@@ -40,111 +40,53 @@
     flex-direction: column
     width: 100%
     .blog_section_intro
+      display: flex
+      align-self: center
       font-family: 'Halant'
-      font-size: 20pt
-      h5
-        font-family: kayak
-        margin-top: 80px
-        font-size: 15pt
-        font-weight: 400
-    .post_container
-      display: flex
-      flex-wrap: wrap
-      justify-content: space-between
-      width: 100%
-      .post_holder
-        height: 450px
-        width: 450px
-        margin-bottom: 20px
-        .post_image
-          display: flex
-          background-image: url(img/standing_desk.jpg)
-          background-size: cover
-          flex-direction: column
-          justify-content: center
-          height: 100%
-          width: 100%
-          background-color: #ccc
-          .post_info
-            display: flex
-            flex-direction: column
-            justify-content: space-around
-            align-self: center
-            text-align: center
-            height: 70%
-            width: 80%
-            background-color: white
-            opacity: 0.8
-            .post_date
-              font-family: 'Halant'
-              border-bottom: 1px solid #0d0c10
-              width: 80%
-              padding-bottom: 15px
-              align-self: center
-              display: none
-            .post_title
-              font-family: kayak
-              font-size: 25pt
-            .post_description
-              font-family: 'Halant'
-              display: none
-              border-top: 1px solid #0d0c10
-              width: 80%
-              padding-top: 15px
-              align-self: center
-    .see_more_posts_link
-      display: flex
-      align-self: flex-end
-      margin-top: 50px
-      margin-bottom: 50px
-      hr
-        margin-top: 10px
-        width: 50px
-        height: 1px
-        border-top: 1px solid black
-        border-bottom: none
-        margin-right: 10px
-        border-left: none
-        border-right: none
-      h5
-        cursor: pointer
-        margin: 0
-        font-family: kayak
-        font-size: 15pt
-        font-weight: 400
-
-
-
-
-
-
-
-
-//on menu click
-.menu
-  font-family: kayak
-  display: none
-  background-color: #0d0c10
-  position: fixed
-  top: 0
-  height: 100vh
-  width: 80vw
-  .menu_side_bar
-    text-align: center
-    width: 70px
-    .main_page_logo
-      padding-top: 30px
-      cursor: pointer
-  .menu_items
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+      font-weight: 300
+      font-size: 35px
+      width: 70%
+      margin-bottom: 150px
+  .post_divider
+    width: 300px
+  .post
     width: 100%
-    p
-      color: white
-      font-size: 35pt
-      cursor: pointer
-      a
-        text-decoration: none
-        color: white
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 80px
+    margin-top: 80px
+    .post_info
+      padding: 50px
+      padding-top: 20px
+      box-sizing: border-box
+      text-align: right
+      width: 35%
+      h1
+        font-family: kayak
+        font-size: 70px
+        margin: 0
+      h3
+        font-family: 'halant'
+        font-style: italic
+        font-size: 12px
+      p
+        font-family: 'halant'
+        font-size: 20px
+        margin-top: 50px
+      .view_post
+        float: right
+        text-align: center
+        font-family: kayak
+        font-size: 20px
+        padding: 15px
+        border: 1px solid black
+        margin-top: 50px
+        width: 45%
+        &:hover
+          cursor: pointer
+          background-color: black
+          color: white
+    .post_image
+      img
+        width: 800px
+        height: auto

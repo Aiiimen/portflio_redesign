@@ -32,74 +32,41 @@
         border-right: none
 
   .about_section_container
+    padding-right: 80px
+    padding-left: 120px
+    padding-top: 80px
     display: flex
     flex-direction: column
     width: 100%
-    .fullscreen-video
-      width: 100%
-      position: fixed
-      z-index: -100
-    .video-overlay
-      height: 100%
-      width: 100%
-      background-color: #0003d1
-      opacity: 0.7
-      position: fixed
-      z-index: -99
-    .about_me_container
-      padding-right: 80px
-      padding-left: 130px
-      padding-top: 80px
+    .about_header
+      display: flex
+      width: 70%
+      align-self: center
+      font-family: 'Halant'
+      font-size: 60px
+      font-weight: 300
+      .header_text
+        p
+          strong
+            color: blue
+        p:nth-child(2)
+          font-size: 25px
+      .header_image
+        img
+          width: 600px
+          height: auto
+    .skills_container
+      margin-top: 50px
       display: flex
       flex-direction: column
-      font-family: kayak
-      color: white
-      font-size: 30pt
+      align-self: center
+      width: 70%
+      font-size: 30px
+      font-family: 'halant'
+      font-weight: 300
+      margin-bottom: 5%
       p
-        font-family: 'Halant'
-        font-size: 18pt
-        width: 70%
-        span
-          text-decoration: underline
-          cursor: pointer
-      h2
-        margin: 50px 0 0px 0
-      p:nth-child(4)
-        font-size: 15pt
-      p:nth-child(6)
-        font-size: 15pt
-      .social_media_container
-        margin-top: 50px
-        margin-bottom: 80px
-        width: 20%
-        display: flex
-        justify-content: space-between
-
-//on menu click
-.menu
-  font-family: kayak
-  display: none
-  background-color: #0d0c10
-  position: fixed
-  top: 0
-  height: 100vh
-  width: 80vw
-  .menu_side_bar
-    text-align: center
-    width: 70px
-    .main_page_logo
-      padding-top: 30px
-      cursor: pointer
-  .menu_items
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    width: 100%
-    p
-      color: white
-      font-size: 35pt
-      cursor: pointer
-      a
-        text-decoration: none
-        color: white
+        margin: 0
+      p:nth-child(1)
+        font-size: 50px
+        font-weight: 300

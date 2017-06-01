@@ -37,55 +37,77 @@
     flex-direction: column
     width: 100%
     .work_section_intro
+      display: flex
+      align-self: center
+      width: 70%
       font-family: 'Halant'
-      font-size: 20pt
-      margin-bottom: 80px
+      font-weight: 300
+      font-size: 35px
+      margin-bottom: 30px
     .projects_container
       width: 100%
       display: flex
       flex-direction: column
+
       .project
-        height: 1000px
         width: 100%
-        display: flex
-        .col1
-          width: 10%
-        .col2
-          width: 80%
-          background-image: url("img/work1.png")
-          background-position: center
-        .col3
-          width: 10%
+        height: auto
+        text-align: center
+        margin-top: 5%
+        margin-bottom: 5%
+        .project_title
+          font-size: 70px
+          font-family: kayak
+          padding: 70px
+          box-sizing: border-box
+        .project_info
+          display: flex
+          justify-content: center
+          font-family: 'Halant'
+          font-size: 20px
+          .project_description_left
+            width: 20%
+            text-align: right
+            p:nth-child(2)
+              margin-top: 150px
+              font-weight: bold
+              font-size: 15px
+          .project_image
+            width: 30%
+            padding-bottom: 3%
+          .project_description_right
+            width: 20%
+            text-align: left
+            p
+              margin-top: 300px
+              strong
+                color: #00c8b6
+          .two
+            p
+              strong
+                color: #de9837
+        .view_project
+          display: flex
+          font-family: kayak
+          justify-content: center
+          p
+            cursor: pointer
+            padding: 15px
+            width: 20%
+            font-size: 25px
+            letter-spacing: 4
+            border: 1px solid black
+            &:hover
+              background-color: #00c8b6
+              border: 1px solid #00c8b6
+              color: white
+        .two
+          p
+            &:hover
+              background-color: #de9837
+              border: 1px solid #de9837
+              color: white
 
 
-
-
-
-//on menu click
-.menu
-  position: fixed
-  font-family: kayak
-  display: none
-  background-color: #0d0c10
-  top: 0
-  height: 100vh
-  width: 80vw
-  .menu_side_bar
-    text-align: center
-    width: 70px
-    .main_page_logo
-      padding-top: 30px
-      cursor: pointer
-  .menu_items
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    width: 100%
-    p
-      color: white
-      font-size: 35pt
-      cursor: pointer
-      a
-        text-decoration: none
-        color: white
+    hr
+      width: 300px
